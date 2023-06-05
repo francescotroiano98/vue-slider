@@ -64,4 +64,14 @@ p{
 .thumbnails{
     width: 100%;
     height: 100px;
+   
+}
+.thumbnails img{
+    filter: brightness(40%);
+}
+.active{
+
+    filter: brightness(300%);
+
+    border: 2px solid chartreuse;
 }
