@@ -26,7 +26,7 @@
         </header>
 
         <main>
-            <section class=" bg-info position-relative pt-4">
+            <section class="items-container d-flex flex-column bg-info position-relative pt-4 pb-5">
                 <div id="carousel" class="carousel-container">
                     
 
@@ -47,6 +47,13 @@
                     
     
                 </div>
+                <div class="thumbnails-container d-flex">
+                    <div class="thumbnails d-flex" v-for="image in images">
+
+                        <img :src="image.image" alt="">
+
+                    </div>
+                </div>    
                 <button id="right" class="btn btn-outline-warning position-absolute px-4 py-1 mb-3 btn-lg" @click="nextSlide">
                     <i class="fa-solid fa-fire-flame-curved" style="color: #ff7b00;"></i>
     
