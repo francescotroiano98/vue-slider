@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+section{
+    height: 600px;
+}
+.carousel-container {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    border: 2px solid magenta;
+
+}
+
+img{
+    object-fit: cover;
+}
+#right{
+    bottom: 0px;
+    right: 20%;
+
+    
+    
+}
+#left{
+    bottom: 0px;
+    left: 20%;
+    
+}
+img{
+    object-fit: cover;
+    
+}
+.background-image{
+
+    background-size: cover;
+   
+    background-position: center;
+    height: 70%;
+
+}
+h2{
+    margin-top: 1rem;
+    color: white;
+}
+p{
+    color: white;
+}
