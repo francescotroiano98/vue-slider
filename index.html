@@ -14,37 +14,50 @@
 <body>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <div id="app">
+
     
-    <header>
-        <h1 class="text-center my-4">
-            IL MIO CAROSELLO
-        </h1>
-    </header>
 
-    <main>
-        <section class=" bg-info position-relative pt-4">
-            <div id="carousel" class="carousel-container">
+        <header>
+            <h1 class="text-center my-4">
+                IL MIO CAROSELLO
+            </h1>
+        </header>
+
+        <main>
+            <section class=" bg-info position-relative pt-4">
+                <div id="carousel" class="carousel-container">
+                    
+
                 
-
-            </div>
-            <button id="right" class="btn btn-outline-warning position-absolute px-4 py-1 mb-3 btn-lg">
-                <i class="fa-solid fa-fire-flame-curved" style="color: #ff7b00;"></i>
-
-
-            </button>
-            <button id="left" class="btn btn-outline-warning  position-absolute px-4 py-1 mb-3 btn-lg">
-
-               
-                <i class="fa-solid fa-dragon" style="color: #ff0000;"></i>
-            </button>
-
-
-        </section>
-    </main>
+                        <img :src="images[activeIndex].image" alt="">
+                    
 
 
 
+                    
+    
+                </div>
+                <button id="right" class="btn btn-outline-warning position-absolute px-4 py-1 mb-3 btn-lg">
+                    <i class="fa-solid fa-fire-flame-curved" style="color: #ff7b00;"></i>
+    
+    
+                </button>
+                <button id="left" class="btn btn-outline-warning  position-absolute px-4 py-1 mb-3 btn-lg">
+    
+                   
+                    <i class="fa-solid fa-dragon" style="color: #ff0000;"></i>
+                </button>
+    
+    
+            </section>
+            
+        </main>
 
+
+
+    </div>    
 
 
 
