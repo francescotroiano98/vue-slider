@@ -54,6 +54,12 @@ createApp({
             this.activeIndex++;
         }
     },
+    goToSlide(slideIndex){
+        if(slideIndex >= this.images.length  || slideIndex < 0 ){
+            return 0;
+        }
+            this.activeIndex = slideIndex;
+    }
   },
 }).mount('#app');
 

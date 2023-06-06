@@ -48,7 +48,7 @@
     
                 </div>
                 <div class="thumbnails-container d-flex">
-                    <div class="thumbnails d-flex" v-for="(image, index) in images" :class="index === activeIndex ? 'active' : ''">
+                    <div class="thumbnails d-flex" v-for="(image, index) in images" :class="index === activeIndex ? 'active' : ''" @click="goToSlide(index)">
 
                         <img :src="image.image" alt="">
 
